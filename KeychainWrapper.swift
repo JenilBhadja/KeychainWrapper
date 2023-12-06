@@ -13,9 +13,7 @@ override func viewWillAppear(_ animated: Bool) {
     let _ = self.retrieveDataFromKeychain(isFromLogin: false)
 }
 
-@IBAction func btnRememberme_clk(_ sender: UIButton) {
-    let isValidated = self.validateTextfields()
-    
+@IBAction func btnRememberme_clk(_ sender: UIButton) {    
     if isValidated {
         self.txtUsername.resignFirstResponder()
         self.txtPassword.resignFirstResponder()
